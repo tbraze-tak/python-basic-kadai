@@ -1,0 +1,21 @@
+#randomモジュールをインストール
+import random
+
+var = random.randint(1,30)
+
+#選択されたランダム数出力
+#print(var)
+
+if var % 3 == 0 and var % 5 == 0 :
+  print(f"{var}は、FizzBuzzです。")    #3と5の倍数出力
+
+elif var % 3 == 0 :
+  print(f"{var}は、Fizzです。")    #3の倍数出力
+
+elif var % 5 == 0 :
+  print(f"{var}は、Buzzです。")    #5の倍数出力
+
+else :
+  print(var)
+  print(f"{var}は3または5の倍数ではありません。")    #3,5の倍数以外出力
+
