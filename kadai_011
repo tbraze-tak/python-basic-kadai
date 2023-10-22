@@ -1,0 +1,14 @@
+list = ["水","金","地","火","木","土","天","海","冥"]
+
+#繰り返し出力 (for文)
+for planet in list :
+  print(planet)
+  
+#繰り返し出力 (while文)
+#list内の個数
+list_length = len(list)
+#インデックス初期化
+index = 0
+while index < list_length :
+  print(list[index])
+  index += 1
