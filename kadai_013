@@ -1,0 +1,8 @@
+#関数課題
+
+def hanbaikakaku(price, zeiritu) :
+
+  zeikomi_price = price + price * zeiritu / 100
+  print(f"価格{price}円, 税込価格{zeikomi_price}円")
+
+hanbaikakaku(1000, 10)
