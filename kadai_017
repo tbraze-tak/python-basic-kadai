@@ -1,1 +1,33 @@
-https://github.com/tbraze-tak/sql-basic-kadai/tree/main/kadai_012/images
+class Human() :
+    #初期化
+    def __init__(self, name,age):
+      self.name = name
+      self.age =  age
+
+    #メソッドの定義
+    def check_adult(self):
+      print(f"{self.age }才なので、")
+
+      if 0 <= self.age < 20 :
+        print(f"{self.name}は大人ではありません。")
+
+      elif self.age < -1 :
+        print(f"{self.age}は入力値が適切ではありません。")
+
+      else:
+        print(f"{self.name}は大人です。")
+
+
+#インスタンス化
+humen = [ Human("Tim", 33 ),
+          Human("Ben", 103),
+          Human("Emi",0),
+          Human("Tom",19),
+          Human("Sam",20)
+]
+
+
+#メソッドへのアクセス
+for human in humen:
+  human.check_adult()
+
